@@ -20,7 +20,8 @@ Facts in the knowledge base can be:
 2. Rules (EX: ```A(x) => H(x)```, ```D(x,y) ^ Q(y) => C(x,y)```)
 
 Here is an example of an input file (tests/inputs/input_1.txt)
-```6
+```
+6
 F(Bob)
 H(John)
 ~H(Alice)
@@ -45,7 +46,8 @@ R(Tom)
 ```
 
 This file outputs
-```FALSE
+```
+FALSE
 TRUE
 TRUE
 FALSE
