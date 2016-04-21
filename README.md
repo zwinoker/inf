@@ -3,15 +3,21 @@ Python package that performs query evaluation using [backward chaining](https://
 
 # Input format
 Input must be in a txt file with the following format: 
+
 1. Number of queries
+
 2. Queries
+
 3. Number of facts in the knowledge base
+
 4. Knowledge base facts
 
 Queries must be atomic facts or negations of atomic facts. EX: ```H(Jon)``` or ```~H(Jon)```
 Facts in the knowledge base can be:
- * Atomic facts
- * Rules (EX: ```A(x) => H(x)```, ```D(x,y) ^ Q(y) => C(x,y)```)
+
+1. Atomic facts
+
+2. Rules (EX: ```A(x) => H(x)```, ```D(x,y) ^ Q(y) => C(x,y)```)
 
 Here is an example of an input file (tests/inputs/input_1.txt)
 ```6
