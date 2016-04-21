@@ -8,11 +8,14 @@ from predicate import Predicate
 from rule import Rule
 
 class Inferences():
-	def __init__(self):
-		# For reading/writing input/output
-		self.inputFileName = self.getInputFileName()
-		self.inputFile = open(self.inputFileName, 'r')
+	def __init__(self, inputfile = None):
 
+		# For reading/writing input/output
+		if inputfile == None :
+			self.inputFileName = self.getInputFileName()
+		else :
+			self.inputFileName = inputfile
+		self.inputFile = open(self.inputFileName, 'r')
 		self.outputFileName = "output.txt"
 		self.outputFile = open(self.outputFileName, 'w')
 

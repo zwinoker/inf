@@ -1,3 +1,4 @@
 *.txt
 input-samples/*
 output-samples/*
+*.pyc
