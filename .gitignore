@@ -1,5 +1,6 @@
-*.txt
+./*.txt
 input-samples/*
 output-samples/*
 *.pyc
 test-results
+output.txt
