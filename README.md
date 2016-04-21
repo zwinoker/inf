@@ -2,7 +2,7 @@
 Python package that performs query evaluation using [backward chaining](https://en.wikipedia.org/wiki/Backward_chaining). Input files establish a knowledge base and list of queries.
 
 # Input format
-Input must be in a txt file with the following format:
+Input must be in a txt file with the following format: 
 1. Number of queries
 2. Queries
 3. Number of facts in the knowledge base
