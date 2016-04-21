@@ -1,0 +1,1 @@
+# First order logic nference engine that solves queries using backward chaining.
