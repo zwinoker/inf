@@ -79,15 +79,20 @@ class Inferences():
 			for q in self.queryList :
 				try :
 					if self.kb.bcs(q) :
-						self.outputFile.write("TRUE\r\n")
+						self.outputFile.write("TRUE\n")
 					else :
-						self.outputFile.write("FALSE\r\n")
+						self.outputFile.write("FALSE\n")
 				except Exception as e :
 					print "\nError executing specific query : ", e, "...Name = ", q.name
 
 		except Exception as e :
-			self.outputFile.write("FALSE\r\n")
+			self.outputFile.write("FALSE\n")
 			print "\nError executing queries : ", e
+
+	# Closes file input/output streams
+	def cleanup(self) :
+		self.inputFile.close()
+		self.outputFile.close()
 
 # Main method
 if __name__ == "__main__" :

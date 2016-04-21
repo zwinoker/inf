@@ -2,3 +2,4 @@
 input-samples/*
 output-samples/*
 *.pyc
+test-results
