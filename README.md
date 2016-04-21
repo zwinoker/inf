@@ -1,5 +1,5 @@
 # First Order Logic Query Evaluator
-Python package that performs query evaluation using (backward chaining)[https://en.wikipedia.org/wiki/Backward_chaining]. Input files establish a knowledge base and list of queries.
+Python package that performs query evaluation using [backward chaining](https://en.wikipedia.org/wiki/Backward_chaining). Input files establish a knowledge base and list of queries.
 
 # Input format
 Input must be in a txt file with the following format:
@@ -10,10 +10,10 @@ Input must be in a txt file with the following format:
 
 Queries must be atomic facts or negations of atomic facts. EX: ```H(Jon)``` or ```~H(Jon)```
 Facts in the knowledge base can be:
-1. Atomic facts
-2. Rules (EX: ```A(x) => H(x)```, ```D(x,y) ^ Q(y) => C(x,y)```)
+ * Atomic facts
+ * Rules (EX: ```A(x) => H(x)```, ```D(x,y) ^ Q(y) => C(x,y)```)
 
-Here is an example of an input file, included in tests/inputs as input_1.txt
+Here is an example of an input file (tests/inputs/input_1.txt)
 ```6
 F(Bob)
 H(John)
@@ -52,5 +52,5 @@ An input file can be specified from the command line. For example : ```python in
 The results for each query will be written in order to ```output.txt```. It can also be passed to the inferences constructor if the engine is used in other code (see ```test.py``` for an example).
 
 # Tests
-Input and expected output for tests are stored in the folder tests. To run these : ```python test.py```
-New tests can be added, be file names must be of the form ```input_n.py``` where n is an integer. Test results are written to the file ```test-results```
+Input and expected output for tests are stored in the folder ```tests```. To run these : ```python test.py```
+New tests can be added, be file names must be of the form ```input_n.py``` and ```output_n.py``` where n is an integer. Test results are written to the file ```test-results```
